@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Option Selector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('image.png');  /* Replace with your image filename */
+            background-size: cover;  /* Ensures the image covers the whole background */
+            background-position: center;  /* Centers the image */
+            background-attachment: scroll; /* Makes the background fixed while scrolling */
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Choose an Option</h1>
+    <form action="send_email.php" method="POST">
+        <label for="options">Select one option:</label>
+        <select id="options" name="selectedOption">
+            <option value="" disabled selected>Select an option</option>
+            <option value="Option 1">Yeh Jawani Hai Deewani (YJHD)</option>
+            <option value="Option 2">2 States</option>
+            <option value="Option 3">Kal Ho Naa Ho</option>
+            <option value="Option 4">Love Aaj Kal</option>
+            <option value="Option 5">Rehna Hai Tere Dil me (RHTDM)</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
